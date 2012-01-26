@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background" >
+"
+
+    
+
+    <TextView
+        style="@style/pageheader"
+        android:text="@string/cpheader" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/b_adduserscreen"
+            style="@style/buttonbackground"
+            android:onClick="doClickAddUserScreen"
+            android:text="@string/adduser" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="20dp" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/b_deleteuser"
+            style="@style/buttonbackground"
+            android:onClick="doClickDeleteUser"
+            android:text="@string/deleteuser" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+</LinearLayout>

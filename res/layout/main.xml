@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background"
+    android:background="@drawable/owl_image7"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/pageheader"
+        android:layout_width="wrap_content"
+        android:text="@string/samplecode" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/b_oscodehelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b_oscodehelp" >
+            </Button>
+
+            <Button
+                android:id="@+id/b_spinnersample"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b_spinnertext" >
+            </Button>
+
+            <Button
+                android:id="@+id/b_cpsample"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b_cpsample" >
+            </Button>
+
+            <Button
+                android:id="@+id/b_thumbnailsample"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b_thumbnailsample" >
+            </Button>
+
+            <Button
+                android:id="@+id/b_asynctasksample"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b_asynctasksample" >
+            </Button>
+
+            <Button
+                android:id="@+id/b_datetimesample"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b_datetimesample" >
+            </Button>
+
+            <Button
+                android:id="@+id/b_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b_notification" >
+            </Button>
+
+            <Button
+                android:id="@+id/b_websample"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b_websample" >
+            </Button>
+            
+            <Button
+                android:id="@+id/b_intentservicebroadcastsample"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b_intentservicebroadcastsample" >
+            </Button>
+            
+            <Button
+                android:id="@+id/b_ttssample"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b_ttssample" >
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

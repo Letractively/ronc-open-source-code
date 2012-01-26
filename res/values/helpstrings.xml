@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="asynchelp">AsyncTaskScreen Help</string>
+    <string name="asynchelptext">        
+        This is an example of using AsyncTask.  AsyncTask should be used when you are expecting a long running task, 
+        or any time a long running task should occur.  AsyncTask creates a separate thread, which runs in doInBackground().  Making HTTP calls 
+        from within the main UI thread is bad practice.
+        \n\n
+        In this particular example, I am randomly sleeping for a certain number of intervals.  After each interval, the progress bar is updated.  
+        The total time in seconds represents the total amount of sleep time.	</string>
+    <string name="oscodehelptext">        
+        OpenSourceCodeSamplesRon is an open source collection of various samples of the Android API.  Hopefully, you will find some useful 
+        information to help with your own project.
+        \n\n
+        Help screens on subsequent pages have been added as menu items.  This is to visually keep the focus on the sample.  Help screens can be 
+        accessed from the Android device\'s menu option button.  The help screens are meant to give some general ideas and mention some of the 
+        technologies involved in the sample.  For each sample I have tried to create a help screen.  Each of those help screens are also 
+        accessible via a menu from the main page titled Sample Code.
+        \n\n
+        Having been a Java JEE developer for nearly 10 of my 15 years at a fortune 500 company and a programmer for nearly 17
+		years, I decided to move toward creating Android applications. The move has been enjoyable, challenging and eye-opening as to its
+		potential. I recently created Golf Card Keeper application, which is available on Android Market.  
+		\n\n
+		My email address is androidron1@hotmail.com, which I will occasionally check.  Any feedback would be appreciated.  
+		\n\n
+		Thanks, 
+		\n
+		Ron Currier	</string>
+    <string name="spinnerhelp">Spinner Sample Help</string>
+    <string name="spinnerhelptext">
+        Choosing a color from the first spinner causes the background color to change to that choice.  Similarly, 
+        choosing a color from the second causes the text color to change.
+        \n\n
+        Although it is a fairly rudimentary example, it shows the usage of Spinners, ArrayAdapters, populating from 
+        an array, and setting colors by getting resources.
+    </string>
+    <string name="cpsampleshelp">Content Provider Samples Help</string>
+    <string name="cpsampleshelptext">
+        Content Provider Samples gives examples of creating and using 2 content providers.  Per the developer guide for Content Providers, 
+        http://developer.android.com/guide/topics/providers/content-providers.html:  "Content providers store and retrieve data and make 
+        it accessible to all applications. They're the only way to share data across applications; there's no common storage area that all 
+        Android packages can access."  "If you want to make your own data public, you have two options: You can create your own content 
+        provider (a ContentProvider subclass) or you can add the data to an existing provider — if there's one that controls the same type 
+        of data and you have permission to write to it." 
+        \n\n
+        In addition to creating the content providers, there are examples of inserting, deleting and accessing the data.  Other interesting 
+        items of note are passing extras from one activity to another, using a SimpleCursorAdapter, using Toasts, and creating 
+        Data Access Objects (DAOs).
+    </string>
+    <string name="thumbnailhelp">Thumbnail Sample Help</string>
+    <string name="thumbnailhelptext">
+        Thumbnail Sample displays a variety of tumbnails at the bottom of the page in a Gallery.  Clicking on one of the pictures gives a 
+        larger version in the ImageView.  Since LayoutParams takes pixels as parameters, there is a converter to convert from DP to pixels.
+    </string>
+    <string name="dtphelp">DateTimePicker Help</string>
+    <string name="dtphelptext">
+        DateTimePicker is an example of using Date and Time Picker Dialogs.  For the DatePicker Dialogs, I have checked to see if they are 
+        Honeycomb/post-Honeycomb or pre-Honeycomb.  If post-Honeycomb, use setCalendarViewShown(true) on the DatePicker instance for DatePickerDialog, as 
+        setCalendarViewShown() existed since Honeycomb, sdk version 11.
+        \n\n
+        Additionally, there are examples of using onSaveInstanceState() and onRestoreInstanceState() for setting and for restoring instance 
+        state information.
+    </string>
+    <string name="notificationhelp">Notification Help</string>
+    <string name="notificationhelptext">
+        The Notification Activity gives an example of using a system service.  In this case, we are creating a Notification to use in the 
+        NotificationManager.  There is a tickerText, showing on the display for a short time, similar to a Toast.  And, there is a small 
+        notification icon showing the most recent notification when clicked.  Both the tickerText and the latest event text are user input.
+    </string>
+    <string name="websamplehelp">WebSample Help</string>
+    <string name="websamplehelptext">
+        Web Sample gives an example of using an Alert Dialog in addition to accessing the internet via 2 browser types, an internal browser, 
+        and a full external browser.  Clicking the Reset button will bring the dialog back up.
+    </string>
+    <string name="intentservicehelp">Intent Service Sample Help</string>
+    <string name="intentservicehelptext">This example incorporates several important concepts I\'d like to discuss in further detail:  Services, IntentServices, BroadcastReceivers,
+        AlarmManagers and Notifications.  It is a bit contrived since AlarmManagers do not take very long to set up and can therefore be run on the main UI thread.
+        Services are used to allow background/ long running processes to occur or to supply functionality for other applications to use.  Services can be either Remote, accessible by other applications on the 
+        device, or Local, only accessible by the creating application.  This is an example of using a local service.  Local services are started calling Context.startService() and continues
+        until Context.stopService() is called OR the service itself calls stopSelf().  There is a limited amount of time before the user receives a ANR,
+        Application Not Responding, message. Five seconds in the UI and ten seconds for BroadcastReceiver.  Services do NOT run in a separate thread.  Therefore, new threads are needed
+        to avoid interfering with the main thread for long running services.  This can be solved by creating a Thread in the Service and doing business logic in the new thread.  Or, 
+        you could use Handlers to interact with the thread.
+        \n\n
+        Service/IntentService - IntentService is a Service class that uses a Handlers and creates a separate thread.  Method onHandleIntent(Intent intent) needs to be over-ridden.  This is where the business logic would go.  
+        There are a couple of key differences between IntentService and Service.  Normally in Services, you would over-ride onBind() (which would then return null in the case of a local service).  IntentService already returns null from
+        onBind(), so there is no need to over-ride.  Additionally, if there are no outstanding messages queued for the handler, IntentService will call stopSelf(), which calls the onDestroy() method and stops the service.
+        This can affect the design.  The code to cancel the initial notification, create the secondary notification and cancel the alarm
+        were done in the activity because I wanted the user to be able to execute these functions.  Otherwise, they would happen so quickly in this case, the user may not see certain aspects of
+        what is occurring.
+        \n\n
+        BroadcastReceiver - Both BroadcastReceiver and Service (IntentService) must be registered in the Android Manifest.  BroadcastReceivers respond to 
+        some service or activity broadcasting an intent using the Context.sendBroadcast() method.  BroadcastReceivers extend Receiver and are registered as 
+        using the receiver tag in the manifest.  As with other intents, the broadcast intent can contain an extra.
+        \n\n
+        AlarmManagers - AlarmManager is a system service provided on Android devices.  With it, you can schedule events to occur, either once or repeatedly.  
+        This example creates an AlarmManager to access a BroadcastReceiver.  This is done through a PendingIntent.  PendingIntent.getBroadcast() acts as 
+        Context.sendBroadcast() when executed through the AlarmManager.
+        \n\n
+        Notifications - This is another example of using notifications.  The notification initial created in the service sets a flag to Notification.FLAG_NO_CLEAR.
+        This flag prevents the notification from being canceled when the user clicks the Clear all button.  The PendingIntent points to the activity, allowing the 
+        user to get back to the activity by clicking on the notification, such as from the home screen.
+        Also reference the help from the Notification screen.  Note:  As of Android API 11, the constructor used is 
+        deprecated.  The reference says to use Notification.Builder instead.	</string>
+    <string name="ttssamplehelp">TTS Sample Help</string>
+    <string name="ttshelptext">
+        With this application, you can enter text and the application will speak it as in US English.  TTS (Text To Speech) uses the Pico Engine that comes with Android.  
+        TTS has been around since Android API 4.  Due to device constraints, related resources are not always fully installed for TTS.  Therefore, you should first check 
+        whether or not the device is resource ready for TTS.  This is done by calling startActivityForResult() and checking the result in onActivityResult().  If
+        the resources are not installed, call the intent to allow the resources to be installed.
+        \n\n
+        The spoken language/accent is set via setLanguage().  There is a variety of languages and locales that can be used.  The specifics of which ones can be investigated 
+        should you need to choose another.  The pitch is set via setpitch(), which defaults to 1.0f.  Using a smaller pitch makes the voice deeper, larger values make it 
+        higher.  In speak(), there is a parameter called QUEUE_FLUSH.  This will flush the queue, dropping any other speech for the application already in the TTS speech queue.	</string>
+
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/oscasynchelp"
+        android:title="@string/asynchelp"></item>
+
+    <item
+        android:id="@+id/osccpsampleshelp"
+        android:title="@string/cpsampleshelp"></item>
+
+    <item
+        android:id="@+id/oscdtphelp"
+        android:title="@string/dtphelp"></item>
+
+    <item
+        android:id="@+id/oscnotificationhelp"
+        android:title="@string/notificationhelp"></item>
+
+    <item
+        android:id="@+id/oscspinnerhelp"
+        android:title="@string/spinnerhelp"></item>
+
+    <item
+        android:id="@+id/oscthumbnailhelp"
+        android:title="@string/thumbnailhelp"></item>
+
+    <item
+        android:id="@+id/oscwebsamplehelp"
+        android:title="@string/websamplehelp"></item>
+    
+    <item
+        android:id="@+id/oscisbsamplehelp"
+        android:title="@string/intentservicehelp"></item>
+    
+    <item
+        android:id="@+id/oscttssamplehelp"
+        android:title="@string/ttssamplehelp"></item>
+
+</menu>

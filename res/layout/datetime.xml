@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="MyHeader" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/b_departDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Date" />
+            
+            <Button
+                android:id="@+id/b_departTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Time" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Depart:" 
+                android:layout_marginRight="5sp" />
+
+            <TextView
+                android:id="@+id/tv_departDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            
+            <TextView
+                android:id="@+id/tv_departTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/b_arriveDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Date" />
+
+            <Button
+                android:id="@+id/b_arriveTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Time" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arrive:" 
+                android:layout_marginRight="5sp"/>
+
+            <TextView
+                android:id="@+id/tv_arriveDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            
+            <TextView
+                android:id="@+id/tv_arriveTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

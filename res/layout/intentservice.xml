@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background"
+    android:gravity="center_horizontal">
+    
+    <TextView 
+        style="@style/pageheader"
+        android:text="Intent Service/Broadcast Receiver Sample"
+        android:layout_width="wrap_content"/>
+    
+    <Button 
+        android:id="@+id/b_serviceStart"
+        android:text="@string/b_startservice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/buttonbackground" 
+        android:layout_marginTop="20sp"
+        android:padding="10sp"
+        android:gravity="center_horizontal"/>
+    
+    <Button 
+        android:id="@+id/b_serviceStop"
+        android:text="@string/b_stopservice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/buttonbackground" 
+        android:layout_marginTop="20sp"
+        android:padding="10sp"
+        android:gravity="center_horizontal"/>
+
+</LinearLayout>

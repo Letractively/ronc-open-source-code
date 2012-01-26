@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background"
+    android:gravity="center_horizontal">
+    
+    <TextView 
+        style="@style/pageheader"
+        android:text="Async Sample"
+        android:layout_width="wrap_content"/>
+
+    <Button
+        android:id="@+id/b_async"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Begin"
+        android:onClick="doClickAsync"
+        style="@style/buttonbackground" 
+        android:layout_marginTop="20sp"
+        android:padding="10sp" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_marginTop="20sp" 
+        android:visibility="invisible"/>"
+    
+    <TextView 
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:textSize="18sp" />
+
+</LinearLayout>

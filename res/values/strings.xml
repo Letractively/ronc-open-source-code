@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OpenSourceCodeSamplesRonC</string>
+
+    <string-array name="strarray_colors">
+        <item>Choose a Color</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Aqua</item>
+        <item>Translucent Red</item>
+        <item>Translucent Aqua</item>
+        <item>Yellow</item>
+        <item>Orange</item>
+    </string-array>
+    <string-array name="strarray_emailcount">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="strarray_webtype">
+        <item>Internal Web</item>
+        <item>External Web</item>
+    </string-array>
+
+    <string name="selectItem">Please choose an item</string>
+    <string name="b_spinnertext">Spinner Sample Color Change</string>
+    <string name="whatcolor">What Color Now?</string>
+    <string name="setbackground">Set Background Color</string>
+    <string name="settext">Set Text Color</string>
+    <string name="userdeletesuccessful">User Deleted Successfully</string>
+    <string name="userdeletenotsuccessful">User NOT Deleted Successfully</string>
+    <string name="adduser">Add User</string>
+    <string name="deleteuser">Delete User</string>
+    <string name="cpheader">Example Using Content Providers</string>
+    <string name="email">Email: </string>
+    <string name="addemail">Add Email</string>
+    <string name="saveemail">Save Email</string>
+    <string name="user">User Name: </string>
+    <string name="first">First Name: </string>
+    <string name="last">Last Name: </string>
+    <string name="b_thumbnailsample">Thumbnail Sample</string>
+    <string name="b_cpsample">Content Provider Sample</string>
+    <string name="b_asynctasksample">AsyncTask Sample</string>
+    <string name="b_datetimesample">DateTime Sample</string>
+    <string name="totaltime">Total Time:  </string>
+    <string name="seconds">Seconds</string>
+    <string name="b_notification">Notification Sample</string>
+    <string name="b_websample">Web Sample</string>
+    <string name="b_oscodehelp">About and Help Menus</string>
+    <string name="speak">Speak</string>
+    <string name="ttspeak">Enter Text To Speak: </string>
+    <string name="b_stopservice">Stop Alarm Service</string>
+    <string name="b_startservice">Start Alarm Service</string>
+    <string name="b_intentservicebroadcastsample">Intent Service/Broadcast/Alarm Sample</string>
+    <string name="b_ttssample">Text To Speech Sample</string>
+    <string name="samplecode">Sample Code</string>
+    
+</resources>

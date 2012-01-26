@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rcc.opensourcecodesamplesronc.android.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".OpenSourceCodeSamplesRonCActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".SpinnerSampleActivity" >
+            <intent-filter >
+                <action android:name="com.rcc.opensourcecodesamplesronc.SPINNER_SAMPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".help.SpinnerHelpActivity" >
+            <intent-filter >
+                <action android:name="com.rcc.opensourcecodesamplesronc.SPINNERHELP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".ContentProviderSamplesActivity" >
+            <intent-filter >
+                <action android:name="com.rcc.opensourcecodesamplesronc.CONTENTPROVIDER_SAMPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".help.ContentProviderSamplesHelpActivity" >
+            <intent-filter >
+                <action android:name="com.rcc.opensourcecodesamplesronc.CPSAMPLESHELP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".CPUserAddActivity" >
+            <intent-filter >
+                <action android:name="com.rcc.opensourcecodesamplesronc.CPUSERADD_SAMPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".CPEmailAddActivity" >
+            <intent-filter >
+                <action android:name="com.rcc.opensourcecodesamplesronc.CPEMAILADD_SAMPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".ThumbnailSampleActivity" >
+            <intent-filter >
+                <action android:name="com.rcc.opensourcecodesamplesronc.THUMBNAIL_SAMPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".help.ThumbnailHelpActivity" >
+            <intent-filter >
+                <action android:name="com.rcc.opensourcecodesamplesronc.THUMBNAILHELP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".AsyncSampleActivity" >
+            <intent-filter >
+                <action android:name="com.rcc.opensourcecodesamplesronc.ASYNCTASK_SAMPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".help.AsyncHelpActivity" >
+            <intent-filter >
+                <action android:name="com.rcc.opensourcecodesamplesronc.ASYNCHELP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".DateTimePickerActivity" >
+            <intent-filter >
+                <action android:name="com.rcc.opensourcecodesamplesronc.DATETIMEPICKER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".help.DateTimePickerHelpActivity" >
+            <intent-filter >
+                <action android:name="com.rcc.opensourcecodesamplesronc.DTPHELP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".NotificationActivity" >
+            <intent-filter >
+                <action android:name="com.rcc.opensourcecodesamplesronc.NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".help.NotificationHelpActivity" >
+            <intent-filter >
+                <action android:name="com.rcc.opensourcecodesamplesronc.NOTIFICATIONHELP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".WebSampleActivity" >
+            <intent-filter >
+                <action android:name="com.rcc.opensourcecodesamplesronc.WEBSAMPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".help.WebHelpActivity" >
+            <intent-filter >
+                <action android:name="com.rcc.opensourcecodesamplesronc.WEBHELP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".help.OSCodeHelpActivity" >
+            <intent-filter >
+                <action android:name="com.rcc.opensourcecodesamplesronc.OSCODEHELP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TTSSampleActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.rcc.opensourcecodesamplesronc.TTS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".help.TTSHelpActivity" >
+            <intent-filter >
+                <action android:name="com.rcc.opensourcecodesamplesronc.TTSHELP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".IntentServiceBroadcastSampleActivity" >
+            <intent-filter >
+                <action android:name="com.rcc.opensourcecodesamplesronc.INTENTSERVICEBROADCAST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".help.IntentServiceBroadcastHelpActivity" >
+            <intent-filter >
+                <action android:name="com.rcc.opensourcecodesamplesronc.INTENTSERVICEBROADCASTHELP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <service android:name="com.rcc.opensourcecodesamplesronc.android.service.MyIntentService" />
+        <receiver android:name="com.rcc.opensourcecodesamplesronc.android.receiver.MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="thisIsABroadcastIntent"/>
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:authorities="com.android.rcc.provider.UserContentProvider"
+            android:name="com.rcc.opensourcecodesamplesronc.android.table.UserContentProvider" />
+        <provider
+            android:authorities="com.android.rcc.provider.EmailContentProvider"
+            android:name="com.rcc.opensourcecodesamplesronc.android.table.EmailContentProvider" />
+    </application>
+
+</manifest>
